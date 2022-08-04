@@ -1,11 +1,12 @@
+import Header from "./components/header/Header";
+import Capacities from "./components/capacities/Capacities";
 
-function App() {
-  return (
-    <div>
-      HOLA
+const App = () => {
+  return <div>
+    <Header />
+    <Capacities />
 
-    </div>
-  )
-}
+  </div>;
+};
 
-export default App
+export default App;
