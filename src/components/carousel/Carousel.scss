@@ -1,0 +1,58 @@
+.card-project{
+    background-repeat: no-repeat;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    margin-right: 2%;
+
+    .wrapper-repository{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+            .giticon{
+                opacity: 0;
+                width: 130px;
+                // position: absolute;
+                // left: 13%;
+                // bottom: 50%; 
+                cursor: pointer;
+            }
+
+            .repository{
+                text-decoration: none;
+                font-size: 25px;
+                opacity: 0;
+                color: #0d56df;
+            }
+        
+        }
+        &:hover .giticon{
+         opacity: 1;
+         transition: 1.2s;
+        }
+        &:hover .repository{
+         opacity: 1;
+         transition: 1.2s;
+        }
+        
+    .wrapper-text{
+        background-color: #fff;
+        padding-left: 2%;
+        padding-bottom: 2%;
+        opacity: 80%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+
+    &:hover .wrapper-text{
+        opacity: 30%;
+        transition: .7s;
+    }
+
+}

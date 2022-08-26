@@ -1,0 +1,25 @@
+.container{
+    background-color: #fff;
+        text-align: center;
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        @media (max-width: 700px){
+            display:block;
+        }
+
+        img{
+            height: auto;
+            width: 8%;
+            padding: 10px;
+            @media (max-width: 700px){
+                padding: 10px;
+                height: auto;
+                width: 15%;
+            }
+            
+        }
+    }
+}

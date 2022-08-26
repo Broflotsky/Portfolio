@@ -2,15 +2,13 @@ import './Projects.scss'
 import foodproject from '../../img/projects/food.jpg'
 import gamesproject from '../../img/projects/games.jpg'
 import weather from '../../img/projects/weather.jpg'
-
-
-import React from 'react'
+import Slider from "react-slick";
 
 function Projects() {
-  return (
+return(
     <div className="project-container">
+     
       <div className="card-project" style={{ backgroundImage: "url(" + foodproject + ")" }}>
-
         <div className='wrapper-text'>
           <h1>Proyecto Alimentos</h1>
           <h3>React, Redux, NodeJS, Sequalize y PostgreSQL</h3>
