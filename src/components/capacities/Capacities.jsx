@@ -1,17 +1,17 @@
 import './Capacities.scss'
 import Skills from '../skills/Skills'
-import Projects from '../projects/Projects'
 import Carousel from '../carousel/Carousel'
 import naturaleza from '../../img/naturaleza.jpg'
 import CV from '../../img/Ivan_Reyes_CV.pdf'
+import Footer from '../footer/Footer'
 
 
-function capacities() {
+function Capacities() {
   return (
     <>
       <Skills /> 
       <div className="about" data-aos="fade-rigth">
-        <h1 > CONÓCEME </h1>
+        <h1 > CONÓCEME, </h1>
         <h3 >TENGO UN POTENCIAL ENORME.</h3>
         <hr />
         <div className="divisor">
@@ -29,19 +29,23 @@ function capacities() {
 
           <a className='download-cv' href={CV} download="IVAN_REYES_CV.pdf"><span>DESCARGAR CV</span></a>
           </div>
-
+ 
         </div>
       </div>
 
       <div className="projects" data-aos="fade-rigth">
-        <h1 className='h1-title'> PROYECTOS </h1>
+        <h1 className='h1-title'> PROYECTOS, </h1>
         <h3 className='h3-title'>EVIDENCIA MI CRECIMIENTO</h3>
         <hr />
         <Carousel />
+      </div>
+
+      <div className="footer">
+        <Footer />
       </div>
 
     </>
   )
 }
 
-export default capacities
+export default Capacities

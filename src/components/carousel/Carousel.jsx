@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import foodproject from '../../img/projects/food.jpg'
 import gamesproject from '../../img/projects/games.jpg'
 import weather from '../../img/projects/weather.jpg'
+import scriptmusic from '../../img/projects/scriptmusic.png'
 import githubicon from '../../img/icons/github.png'
 
 
@@ -44,11 +45,25 @@ function Carousel() {
     return (
         <Slider {...settings}>
             <div>
-                <div className="card-project" style={{ backgroundImage: "url(" + foodproject + ")"}}>
-                        <div className='wrapper-repository'>
-                        <img className='giticon' src={githubicon} alt="" />
+                <div className="card-project" style={{ backgroundImage: "url(" + scriptmusic + ")" }}>
+                    <div className='wrapper-repository'>
+                        <img className='giticon' src={githubicon} alt="projectimage" />
+                        <a href="https://github.com/JaluGJ/ScriptMusic" className='repository' target="_blank"><span >Ir al repositorio</span></a>
+                    </div>
+                    <div className='wrapper-text'>
+                        <h1>Script Music App</h1>
+                        <h3>React, ReactNative, Redux, ReduxToolkit NodeJS, MongoDB</h3>
+                        <p> Aplicación movil con panel de administrador web, tienda de instrumentos musicales con gran número de funcionalidades tanto para el usuario como el administrador.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div className="card-project" style={{ backgroundImage: "url(" + foodproject + ")" }}>
+                    <div className='wrapper-repository'>
+                        <img className='giticon' src={githubicon} alt="projectimage" />
                         <a href="https://github.com/Broflotsky/PIFOODCOM" target="_blank" className='repository'><span >Ir al repositorio</span></a>
-                        </div>
+                    </div>
                     <div className='wrapper-text'>
                         <h1>Proyecto Alimentos</h1>
                         <h3>React, Redux, NodeJS, Sequalize y PostgreSQL</h3>
@@ -59,10 +74,10 @@ function Carousel() {
 
             <div>
                 <div className="card-project" style={{ backgroundImage: "url(" + gamesproject + ")" }}>
-                <div className='wrapper-repository'>
-                        <img className='giticon' src={githubicon} alt="" />
+                    <div className='wrapper-repository'>
+                        <img className='giticon' src={githubicon} alt="projectimage" />
                         <a href="https://github.com/Broflotsky/PIGAMES" className='repository' target="_blank"><span >Ir al repositorio</span></a>
-                        </div>
+                    </div>
                     <div className='wrapper-text'>
                         <h1>Proyecto Videojuegos</h1>
                         <h3>React, Redux, NodeJS, Sequalize y PostgreSQL</h3>
@@ -73,10 +88,10 @@ function Carousel() {
 
             <div>
                 <div className="card-project" style={{ backgroundImage: "url(" + weather + ")" }}>
-                <div className='wrapper-repository'>
-                        <img className='giticon' src={githubicon} alt="" />
+                    <div className='wrapper-repository'>
+                        <img className='giticon' src={githubicon} alt="projectimage" />
                         <a href="https://github.com/Broflotsky/WeatherApp" className='repository' target="_blank"><span >Ir al repositorio</span></a>
-                        </div>
+                    </div>
                     <div className='wrapper-text'>
                         <h1>Proyecto Clima</h1>
                         <h3>React y NodeJS</h3>

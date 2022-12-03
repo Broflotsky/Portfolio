@@ -14,13 +14,10 @@
         flex-direction: column;
         align-items: center;
         position: relative;
+
             .giticon{
                 opacity: 0;
                 width: 130px;
-                // position: absolute;
-                // left: 13%;
-                // bottom: 50%; 
-                cursor: pointer;
             }
 
             .repository{
@@ -31,6 +28,7 @@
             }
         
         }
+        
         &:hover .giticon{
          opacity: 1;
          transition: 1.2s;
